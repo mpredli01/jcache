@@ -1,0 +1,28 @@
+task init() {
+    println()
+    println 'JCache Example Application'
+    println new Date()
+    println()
+    }
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+mainClassName = 'org.redlich.jcache.Application'
+
+jar {
+    baseName = 'jcache'
+    version =  '0.0.1'
+    }
+
+repositories {
+    mavenCentral()
+    }
+
+dependencies {
+    compile group: 'javax.cache', name: 'cache-api', version: '1.1.0'
+    compile group: 'com.hazelcast', name: 'hazelcast', version: '3.9.1'
+    compile group: 'org.glassfish', name: 'javax.json', version: '1.1.2'
+    testCompile("junit:junit:4.12")
+    }

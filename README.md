@@ -3,7 +3,7 @@
 
 ### InfoQ Java Queue
 
-#### published January xx, 2018
+#### published January 9, 2018
 
 This example application demonstrates how to use [JCache](https://www.jcp.org/en/jsr/detail?id=107) and is adapted from the [Baeldung JCache article](http://www.baeldung.com/jcache). The application uses a JSON parser to read and parse the data in `publications.json`. 
 
